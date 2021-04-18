@@ -1,0 +1,4 @@
+diff a/.eslintrc.js b/.eslintrc.js	(rejected hunks)
+@@ -14 +14 @@ module.exports = {
+-    'prettier/prettier': ['error', { singleQuote: true, printWidth: 200}],
++    'prettier/prettier': ['error', { singleQuote: true, printWidth: 200 }],

@@ -3,7 +3,7 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: ['plugin:vue/strongly-recommended', '@vue/prettier'],
+  extends: ['plugin:vue/essential', '@vue/prettier'],
   parserOptions: {
     parser: 'babel-eslint',
   },
@@ -11,7 +11,17 @@ module.exports = {
     quotes: 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'prettier/prettier': ['error', { singleQuote: true, printWidth: 200 }],
+    'prettier/prettier': [
+      'warn',
+      {
+        bracketSpacing: true,
+        jsxBracketSameLine: true,
+        singleQuote: true,
+        trailingComma: 'all',
+        endOfLine: 'auto',
+        printWidth: 200,
+      },
+    ],
   },
   overrides: [
     {
